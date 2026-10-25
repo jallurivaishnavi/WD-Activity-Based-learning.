@@ -1,0 +1,408 @@
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f3f7f2;
+    color: #26352b;
+}
+
+header {
+    background-color: #173d2b;
+    color: white;
+    text-align: center;
+    padding: 25px;
+}
+
+header h1 {
+    margin: 0;
+}
+
+nav {
+    background-color: #285943;
+    text-align: center;
+    padding: 15px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 12px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #b9e769;
+}
+
+.hero {
+    height: 380px;
+    background-image: linear-gradient(
+        rgba(0, 0, 0, 0.4),
+        rgba(0, 0, 0, 0.5)
+    ), url("https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?w=1400");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+}
+
+.hero-text h2 {
+    font-size: 35px;
+}
+
+.btn {
+    display: inline-block;
+    background-color: #b9e769;
+    color: #173d2b;
+    padding: 12px 22px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.title {
+    text-align: center;
+    margin-top: 35px;
+}
+
+.trip-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 22px;
+    padding: 25px;
+}
+
+.trip-card {
+    background-color: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 3px 10px #cbd6cb;
+}
+
+.trip-image {
+    position: relative;
+    height: 230px;
+}
+
+.trip-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.trip-image h3 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 15px;
+    color: white;
+    background: linear-gradient(transparent, #000);
+}
+
+.trip-info {
+    padding: 15px;
+}
+
+.price {
+    color: #247344;
+}
+
+.camping {
+    background-color: #dcebdc;
+    text-align: center;
+    padding: 30px;
+}
+
+.camp-box {
+    background-color: white;
+    max-width: 600px;
+    margin: 20px auto 0;
+    padding: 20px;
+    border-left: 6px solid #285943;
+    border-radius: 8px;
+}
+
+.schedule {
+    padding: 25px;
+    text-align: center;
+}
+
+table {
+    width: 100%;
+    max-width: 800px;
+    margin: auto;
+    border-collapse: collapse;
+    background-color: white;
+}
+
+th {
+    background-color: #285943;
+    color: white;
+}
+
+th, td {
+    padding: 12px;
+    border: 1px solid #ccc;
+}
+
+.equipment {
+    background-color: #fff4d6;
+    padding: 25px;
+}
+
+.safety {
+    background-color: #f9dfd9;
+    padding: 25px;
+}
+
+.equipment ul, .safety ul {
+    line-height: 2;
+}
+
+.contact {
+    background-color: #dcebdc;
+    text-align: center;
+    padding: 25px;
+}
+
+footer {
+    background-color: #173d2b;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
+
+@media (max-width: 800px) {
+    .trip-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .hero-text h2 {
+        font-size: 27px;
+    }
+}
+
+@media (max-width: 550px) {
+    .trip-container {
+        grid-template-columns: 1fr;
+    }
+
+    nav a {
+        display: inline-block;
+        margin: 7px;
+    }
+
+    .hero {
+        height: 300px;
+    }
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f3f7f2;
+    color: #26352b;
+}
+
+header {
+    background-color: #173d2b;
+    color: white;
+    text-align: center;
+    padding: 25px;
+}
+
+header h1 {
+    margin: 0;
+}
+
+nav {
+    background-color: #285943;
+    text-align: center;
+    padding: 15px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 12px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #b9e769;
+}
+
+.hero {
+    height: 380px;
+    background-image: linear-gradient(
+        rgba(0, 0, 0, 0.4),
+        rgba(0, 0, 0, 0.5)
+    ), url("https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?w=1400");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+}
+
+.hero-text h2 {
+    font-size: 35px;
+}
+
+.btn {
+    display: inline-block;
+    background-color: #b9e769;
+    color: #173d2b;
+    padding: 12px 22px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.title {
+    text-align: center;
+    margin-top: 35px;
+}
+
+.trip-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 22px;
+    padding: 25px;
+}
+
+.trip-card {
+    background-color: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 3px 10px #cbd6cb;
+}
+
+.trip-image {
+    position: relative;
+    height: 230px;
+}
+
+.trip-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.trip-image h3 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 15px;
+    color: white;
+    background: linear-gradient(transparent, #000);
+}
+
+.trip-info {
+    padding: 15px;
+}
+
+.price {
+    color: #247344;
+}
+
+.camping {
+    background-color: #dcebdc;
+    text-align: center;
+    padding: 30px;
+}
+
+.camp-box {
+    background-color: white;
+    max-width: 600px;
+    margin: 20px auto 0;
+    padding: 20px;
+    border-left: 6px solid #285943;
+    border-radius: 8px;
+}
+
+.schedule {
+    padding: 25px;
+    text-align: center;
+}
+
+table {
+    width: 100%;
+    max-width: 800px;
+    margin: auto;
+    border-collapse: collapse;
+    background-color: white;
+}
+
+th {
+    background-color: #285943;
+    color: white;
+}
+
+th, td {
+    padding: 12px;
+    border: 1px solid #ccc;
+}
+
+.equipment {
+    background-color: #fff4d6;
+    padding: 25px;
+}
+
+.safety {
+    background-color: #f9dfd9;
+    padding: 25px;
+}
+
+.equipment ul, .safety ul {
+    line-height: 2;
+}
+
+.contact {
+    background-color: #dcebdc;
+    text-align: center;
+    padding: 25px;
+}
+
+footer {
+    background-color: #173d2b;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
+
+@media (max-width: 800px) {
+    .trip-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .hero-text h2 {
+        font-size: 27px;
+    }
+}
+
+@media (max-width: 550px) {
+    .trip-container {
+        grid-template-columns: 1fr;
+    }
+
+    nav a {
+        display: inline-block;
+        margin: 7px;
+    }
+
+    .hero {
+        height: 300px;
+    }
+}

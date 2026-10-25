@@ -1,0 +1,180 @@
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f7fb;
+    color: #263238;
+}
+
+header {
+    background-color: #17365d;
+    color: white;
+    text-align: center;
+    padding: 25px;
+}
+
+header h1 {
+    margin: 0;
+}
+
+nav {
+    background-color: #24527a;
+    text-align: center;
+    padding: 15px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 12px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #ffd166;
+}
+
+.welcome {
+    background-color: #dceaf7;
+    text-align: center;
+    padding: 30px;
+}
+
+.search-section {
+    text-align: center;
+    padding: 25px;
+}
+
+input, select, button {
+    padding: 10px;
+    margin: 5px;
+    border: 1px solid #aaa;
+    border-radius: 5px;
+}
+
+button {
+    background-color: #24527a;
+    color: white;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #17365d;
+}
+
+.title {
+    text-align: center;
+    margin-top: 25px;
+}
+
+.book-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    padding: 25px;
+}
+
+.book-card {
+    background-color: white;
+    text-align: center;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px #d0d7df;
+}
+
+.book-card img {
+    width: 100%;
+    height: 230px;
+    object-fit: contain;
+}
+
+.book-card h3 {
+    color: #24527a;
+}
+
+.book-card p {
+    font-size: 14px;
+}
+
+.available {
+    display: inline-block;
+    background-color: #d4edda;
+    color: #155724;
+    padding: 7px 12px;
+    border-radius: 5px;
+}
+
+.unavailable {
+    display: inline-block;
+    background-color: #f8d7da;
+    color: #721c24;
+    padding: 7px 12px;
+    border-radius: 5px;
+}
+
+.catalog {
+    padding: 25px;
+    text-align: center;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: white;
+}
+
+th {
+    background-color: #24527a;
+    color: white;
+}
+
+th, td {
+    padding: 12px;
+    border: 1px solid #ccc;
+    text-align: left;
+}
+
+tr:nth-child(even) {
+    background-color: #eaf1f8;
+}
+
+.rules {
+    background-color: #fff3cd;
+    padding: 25px;
+}
+
+.rules ul {
+    line-height: 2;
+}
+
+footer {
+    background-color: #17365d;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
+
+@media (max-width: 800px) {
+    .book-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 500px) {
+    .book-container {
+        grid-template-columns: 1fr;
+    }
+
+    nav a {
+        display: inline-block;
+        margin: 6px;
+    }
+
+    .catalog {
+        overflow-x: auto;
+    }
+
+    table {
+        min-width: 600px;
+    }
+}

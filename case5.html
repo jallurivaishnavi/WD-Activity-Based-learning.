@@ -1,0 +1,147 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Digital Library</title>
+    <link rel="stylesheet" href="case5.css">
+</head>
+<body>
+
+<header>
+    <h1>📚 Digital Library</h1>
+    <p>Discover Books, Explore Knowledge</p>
+</header>
+
+<nav>
+    <a href="#home">Home</a>
+    <a href="#books">Books</a>
+    <a href="#catalog">Catalog</a>
+    <a href="#rules">Library Rules</a>
+</nav>
+
+<section class="welcome" id="home">
+    <h2>Welcome to Our Digital Library</h2>
+    <p>Find your favorite books and explore new ideas.</p>
+</section>
+
+<section class="search-section">
+    <h2>Search Your Books</h2>
+    <input type="text" placeholder="Search by book title...">
+
+    <select>
+        <option>All Categories</option>
+        <option>Fiction</option>
+        <option>Science</option>
+        <option>Technology</option>
+        <option>Self-Help</option>
+    </select>
+
+    <button type="button">Search</button>
+</section>
+
+<h2 class="title" id="books">Popular Books</h2>
+
+<div class="book-container">
+
+    <div class="book-card">
+        <img src="https://covers.openlibrary.org/b/isbn/9780743273565-L.jpg"
+             alt="The Great Gatsby book cover">
+        <h3>The Great Gatsby</h3>
+        <p><b>Author:</b> F. Scott Fitzgerald</p>
+        <p><b>Category:</b> Fiction</p>
+        <span class="available">Available</span>
+    </div>
+
+    <div class="book-card">
+        <img src="https://covers.openlibrary.org/b/isbn/9780131103627-L.jpg"
+             alt="The C Programming Language book cover">
+        <h3>The C Programming Language</h3>
+        <p><b>Author:</b> Brian W. Kernighan</p>
+        <p><b>Category:</b> Technology</p>
+        <span class="unavailable">Borrowed</span>
+    </div>
+
+    <div class="book-card">
+        <img src="https://covers.openlibrary.org/b/isbn/9780747581086-L.jpg"
+             alt="Harry Potter book cover">
+        <h3>Harry Potter</h3>
+        <p><b>Author:</b> J. K. Rowling</p>
+        <p><b>Category:</b> Fantasy</p>
+        <span class="available">Available</span>
+    </div>
+
+    <div class="book-card">
+        <img src="https://covers.openlibrary.org/b/isbn/9781501124020-L.jpg"
+             alt="Atomic Habits book cover">
+        <h3>Atomic Habits</h3>
+        <p><b>Author:</b> James Clear</p>
+        <p><b>Category:</b> Self-Help</p>
+        <span class="available">Available</span>
+    </div>
+
+</div>
+
+<section class="catalog" id="catalog">
+    <h2>Book Catalog</h2>
+
+    <table>
+        <tr>
+            <th>Book ID</th>
+            <th>Book Name</th>
+            <th>Author</th>
+            <th>Category</th>
+            <th>Status</th>
+        </tr>
+
+        <tr>
+            <td>101</td>
+            <td>The Great Gatsby</td>
+            <td>F. Scott Fitzgerald</td>
+            <td>Fiction</td>
+            <td>Available</td>
+        </tr>
+
+        <tr>
+            <td>102</td>
+            <td>The C Programming Language</td>
+            <td>Brian W. Kernighan</td>
+            <td>Technology</td>
+            <td>Borrowed</td>
+        </tr>
+
+        <tr>
+            <td>103</td>
+            <td>Harry Potter</td>
+            <td>J. K. Rowling</td>
+            <td>Fantasy</td>
+            <td>Available</td>
+        </tr>
+
+        <tr>
+            <td>104</td>
+            <td>Atomic Habits</td>
+            <td>James Clear</td>
+            <td>Self-Help</td>
+            <td>Available</td>
+        </tr>
+    </table>
+</section>
+
+<section class="rules" id="rules">
+    <h2>📖 Library Rules</h2>
+    <ul>
+        <li>Maintain silence inside the library.</li>
+        <li>Return borrowed books before the due date.</li>
+        <li>Handle books carefully.</li>
+        <li>Do not write or draw on library books.</li>
+        <li>Keep your library card safe.</li>
+        <li>Follow the borrowing limits set by the library.</li>
+    </ul>
+</section>
+
+<footer>
+    <p>© 2026 Digital Library | Knowledge for Everyone</p>
+</footer>
+
+</body>
+</html>
